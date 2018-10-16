@@ -108,9 +108,9 @@ class Recommendation:
             res += string
         return res
 
-    def debugging(self):
+    def recommend(self):
         result = self.fillEmpty()
         with open("grades.json", 'w') as file:
             file.write('{\n' + result.rstrip(',') + '\n\n}')
 
-        print(self.grades)
+        #print(self.grades)

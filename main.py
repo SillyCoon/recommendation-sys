@@ -33,5 +33,4 @@ for i in range(0, len(data)):
         data[i][j] = data[i][j].lstrip()
 
 recommendation = rcm.Recommendation(data, context_day, context_place)
-#recommendation.fillEmpty()
-recommendation.debugging()
+recommendation.recommend()
